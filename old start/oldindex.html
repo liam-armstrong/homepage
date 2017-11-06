@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>home</title>
+<link rel="stylesheet" href="style.css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+</head>
+<body>
+<ul class="container">
+        <!-- Start Dropdown -->
+        <li><a class="parent" href="#">Reddit</a> <!-- Section title -->
+                <ul class="submenu"> <!-- Links Start -->
+                        <li><a class="tab" href="https://www.reddit.com">Front Page</a></li>
+                        <li><a class="tab" href="https://www.reddit.com/r/all">r/All</a></li>
+                        <li><a class="tab" href="https://www.reddit.com/r/Overwatch">r/Overwatch</a></li>
+                        <li><a class="tab" href="https://www.reddit.com/r/GlobalOffensive">r/GlobalOffensive</a></li>
+                </ul> <!-- Links End -->
+        </li>
+        <!-- End Dropdown Section -->
+        <li><a class="parent" href="#">4Chan</a>
+                <ul class="submenu">
+                        <li><a class="tab" href="https://4chan.org/wg">/wg/</a></li>
+                        <li><a class="tab" href="https://4chan.org/vg">/vg/</a></li>
+                        <li><a class="tab" href="https://4chan.org/g">/g/</a></li>
+                </ul>
+        </li>
+                <li><a class="parent" href="#">Work</a>
+                <ul class="submenu">
+                        <li><a class="tab" href="https://aw.tdsb.on.ca/TdsbLogin.aspx">Academic Workspace</a></li>
+                        <li><a class="tab" href="https://mail.google.com">Gmail</a></li>
+                        <li><a class="tab" href="https://drive.google.com/drive/u/0/my-drive">Google Drive</a></li>
+                        <li><a class="tab" href="https://github.com/liam-armstrong">GitHub</a></li>
+                        <li><a class="tab" href="http://www.snowhawks.com/toronto-home.html">Snowhawks</a></li>
+                </ul>
+        </li>
+        <li><a class="parent" href="#">Fun</a>
+                <ul class="submenu">
+                        <li><a class="tab" href="https://facebook.com">Facebook</a></li>
+                        <li><a class="tab" href="https://messenger.com">Messenger</a></li>
+                        <li><a class="tab" href="https://youtube.com">Youtube</a></li>
+                        <li><a class="tab" href="https://thepiratebay.org/">The Pirate Bay</a></li>
+                </ul>
+        </li>
+</ul>
+
+<script>
+$('.submenu').hide();
+$("li:has(ul)").click(function(){
+$("ul",this).slideToggle('200');
+});
+</script>
+</body>
+</html>
