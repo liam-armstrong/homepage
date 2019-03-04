@@ -441,8 +441,7 @@
 
     _setTime() {
       const date = new Date();
-      date.setHours(date.getUTCHours() + date.getTimezoneOffset()/60 - 1)
-      const hours = this._pad(date.getUTCHours() + (date.getTimezoneOffset()/60));
+      const hours = this._pad(date.getHours());
       const minutes = this._pad(date.getMinutes());
       this._el.innerHTML = hours + this._delimiter + minutes;
     }
